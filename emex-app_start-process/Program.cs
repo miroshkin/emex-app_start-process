@@ -10,6 +10,7 @@ namespace emex_app_start_process
     {
         static void Main(string[] args)
         {
+            if (args.Length == 0) return;
             System.Diagnostics.Process.Start(args[0]);
         }
     }
